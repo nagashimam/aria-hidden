@@ -1,0 +1,7 @@
+{
+  "name": "aria-hidden",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
