@@ -18,8 +18,10 @@ export class HomePage implements AfterViewInit {
     const modal = await this.modalController.create({
       component: ModalPage,
     });
-    modal.onDidDismiss().then(() => this.service.show());
+    modal.onDidDismiss().then(() => {
+      this.service.show();
+    });
     this.service.hide();
-    modal.prepend();
+    modal.present();
   }
 }
